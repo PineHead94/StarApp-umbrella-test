@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customize umbrella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cu-main-container">
+      <div class="cu-umbrella-left-container">
+        <img
+          class="cu-umbrella-image"
+          src="./assets/Blue_umbrella.png"
+          alt="umbrella"
+        />
+        <img class="cu-logo-loader" src="./assets/loader_icon.svg" alt="loader" />
+        <img class="cu-logo-image" src="" alt="umbrella" />
+      </div>
+      <div class="cu-umbrella-right-container">
+        <h1 class="cu-umbrella-right-header">Custom Umbrella</h1>
+        <div class="cu-color-selector-wrapper">
+          <div class="cu-color-pick cu-color-pick-blue"></div>
+          <div class="cu-color-pick cu-color-pick-pink"></div>
+          <div class="cu-color-pick cu-color-pick-yellow"></div>
+        </div>
+        <div class="cu-sub-header-container">
+          <h4 class="cu-sub-header">Customize your umbrella</h4>
+          <p class="cu-sub-text">Upload a logo for an instant preview.</p>
+          <p class="cu-sub-description">
+            .png and .jpg files only. Max file size is 5MB.
+          </p>
+        </div>
+        <div class="cu-upload-button-container">
+          <input
+            type="file"
+            id="logo-upload"
+            name="logo-upload"
+            accept="image/png"
+            hidden
+          />
+          <img
+            src="./assets/upload_icon.svg"
+            class="cu-upload-image cu-upload-item"
+          />
+          <img class="cu-logo-loader-sec" src="./assets/loader_icon.svg" alt="loader" />
+          <div class="cu-upload-item cu-upload-text">Upload Logo</div>
+          <div class="cu-upload-cancel-container">
+            <img
+              src="./assets/cross-23.svg"
+              class="cu-upload-item cu-upload-cancel"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
